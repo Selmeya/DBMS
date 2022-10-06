@@ -8,52 +8,55 @@ Output:
   3)  ![Ex1 output 3](https://user-images.githubusercontent.com/112368898/194229337-ef623d61-0456-4ace-bb3b-0352e537d9fb.png)
   4)  ![Ex1 output 4](https://user-images.githubusercontent.com/112368898/194229504-735baa6c-29a0-44b9-8593-a3753be40275.png)
   5)  ![Ex1 output 5](https://user-images.githubusercontent.com/112368898/194229616-e5166a61-3dfa-45f4-98ec-7896bf8c67a4.png)
-Experiment 2 : 
+Experiment 2 : DDL Commands with Constraints – PRIMARY, FOREIGN KEY, UNIQUE, CHECK
 Output:
- 1)mysql> desc Stu;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| ROLLNO    | int(10)     | NO   | PRI | 0       |       |
-| NAME      | varchar(20) | YES  |     | NULL    |       |
-| DEPT      | varchar(4)  | YES  |     | NULL    |       |
-| GENDER    | varchar(1)  | YES  |     | NULL    |       |
-| DOB       | date        | YES  |     | NULL    |       |
-| CITY      | varchar(20) | YES  |     | NULL    |       |
-| MOBILE_NO | int(10)     | NO   |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-7 rows in set (0.01 sec)
-2)mysql> desc Faculty;
-+------------+-------------+------+-----+---------+-------+
-| Field      | Type        | Null | Key | Default | Extra |
-+------------+-------------+------+-----+---------+-------+
-| FACULTY_ID | varchar(4)  | YES  |     | NULL    |       |
-| FAC_NAME   | varchar(15) | YES  |     | NULL    |       |
-| GENDER     | char(1)     | YES  |     | NULL    |       |
-| DOB        | date        | YES  |     | NULL    |       |
-| DOJ        | date        | YES  |     | NULL    |       |
-| MOBILE_NO  | int(10)     | YES  |     | NULL    |       |
-| Dept       | varchar(4)  | YES  |     | NULL    |       |
-+------------+-------------+------+-----+---------+-------+
-3)mysql> desc Dept;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| DEPT_NO   | varchar(4)  | NO   | PRI |         |       |
-| DEPT_NAME | varchar(15) | YES  |     | NULL    |       |
-| DEPT_HEAD | varchar(4)  | YES  |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-3 rows in set (0.03 sec)
-4)mysql> desc Cour;
-+-------------+-------------+------+-----+---------+-------+
-| Field       | Type        | Null | Key | Default | Extra |
-+-------------+-------------+------+-----+---------+-------+
-| COURSE_NO   | varchar(3)  | NO   | PRI |         |       |
-| COURSE_DESC | varchar(14) | YES  |     | NULL    |       |
-| COURSE_TYPE | char(1)     | YES  |     | NULL    |       |
-| SEM_NO      | char(1)     | YES  |     | NULL    |       |
-| HALL_NO     | varchar(4)  | YES  |     | NULL    |       |
-| FAC_NO      | varchar(4)  | YES  |     | NULL    |       |
-+-------------+-------------+------+-----+---------+-------+
-6 rows in set (0.02 sec)
+ 1)![EX2 output1](https://user-images.githubusercontent.com/112368898/194352367-5b54d4fa-fefa-452e-b09f-71fa5dd3c3f4.png)
+ 2)![EX2 output2](https://user-images.githubusercontent.com/112368898/194352463-08b68d10-0f1c-42cc-b2f5-5665d73e3e2b.png)
+ 3)![EX2 output3](https://user-images.githubusercontent.com/112368898/194352691-e94bf2bd-252b-4ecb-8b06-194e649e073b.png)
+Experiment 3&4: DDL Commands with Constraints – PRIMARY, FOREIGN KEY, UNIQUE, CHECK
+Output:
+Experiment 5:SELECT with various clause – WHERE, pattern matching
+Output:
+Experiment 6:SELECT with various clause – BETWEEN, IN, Aggregate function
+Output:
+Experiment 7:SELECT with various clause – GROUP BY, HAVING, ORDER BY
+Output:
+Experiment 8:SubQuery& Correlated Query
+Output:
+Experiment 9:Joins – EquiJoin, InnerJoin, OuterJoin
+Output:
+Experiment 10:VIEW, INDEX, SEQUENCE
+Output:
+Experiment 11:Simple programming exercise using(REPEAT, WHILE )
+Output:
+Experiment 12:Simple programming exercise using(CASE and LOOP)
+Output:
+Experiment 13:TCL COMMANDS
+Output:
+Experiment 14:DCL COMMANDS
+Output:
+Experiment 15:HIGH LEVEL PROGRAMMING EXTENSIONS (PROCEDURES)
+Output:
+Experiment 16:HIGH LEVEL PROGRAMMING EXTENSIONS(FUNCTIONS)
+Output:
+Experiment 17:HIGH LEVEL LANGUAGE EXTENSION WITH CURSORS
+Output:
+Experiment 18:TRIGGER
+Output:
+Experiment 19:
+Output:
+Experiment 20:
+Output:
+Experiment 21:DATABASECONNECTIVITYUSING JAVA AND MSACESS
+Output:
+Experiment 22:
+Output:
+Experiment 23:
+Output:
+Experiment 24:
+Output:
+Experiment 25:
+Output:
+
+
 
