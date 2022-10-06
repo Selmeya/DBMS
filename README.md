@@ -19,8 +19,23 @@ Output:
  2)![EX2 output2](https://user-images.githubusercontent.com/112368898/194352463-08b68d10-0f1c-42cc-b2f5-5665d73e3e2b.png)
  
  3)![EX2 output3](https://user-images.githubusercontent.com/112368898/194352691-e94bf2bd-252b-4ecb-8b06-194e649e073b.png)
-Experiment 3&4: DDL Commands with Constraints – PRIMARY, FOREIGN KEY, UNIQUE, CHECK
+Experiment 3&4: DML Commands – INSERT, SELECT, UPDATE, DELETE(https://github.com/Selmeya/DBMS/blob/main/DML%20Commands%20%E2%80%93%20INSERT%2C%20SELECT%2C%20UPDATE%2C%20DELETE)
 Output:
+
+1)![EX34 OUTPUT 1](https://user-images.githubusercontent.com/112368898/194371435-dccb1687-d1ed-4f6b-8cdf-133c7c48e52c.png)
+
+2)![EXP34 OUTPUT2](https://user-images.githubusercontent.com/112368898/194371656-495757bb-b99b-4d3b-a310-dce6bd37e6de.png)
+
+3)![EX34 OUTPUT 3](https://user-images.githubusercontent.com/112368898/194371913-464a7496-4783-4b90-a760-0d5f84722b16.png)
+
+4)![EX34 OUTPUT 4](https://user-images.githubusercontent.com/112368898/194372198-5be62362-b50d-4259-b666-4b87e5cdc061.png)
+
+5)![EX34 OUTPUT 5](https://user-images.githubusercontent.com/112368898/194372650-9c7aba7f-e37d-4bcb-81ec-d1dc6702655d.png)
+
+6)![EX34 OUTPUT 6](https://user-images.githubusercontent.com/112368898/194372711-1074136a-c14c-4555-ac99-3414914e2472.png)
+
+7)![EX34 OUTPUT 7](https://user-images.githubusercontent.com/112368898/194372765-e8df916d-1dcb-4448-b53b-566912ca736d.png)
+
 Experiment 5:SELECT with various clause – WHERE, pattern matching
 Output:
 Experiment 6:SELECT with various clause – BETWEEN, IN, Aggregate function
