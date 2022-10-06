@@ -8,6 +8,8 @@ Output:
   3)  ![Ex1 output 3](https://user-images.githubusercontent.com/112368898/194229337-ef623d61-0456-4ace-bb3b-0352e537d9fb.png)
   4)  ![Ex1 output 4](https://user-images.githubusercontent.com/112368898/194229504-735baa6c-29a0-44b9-8593-a3753be40275.png)
   5)  ![Ex1 output 5](https://user-images.githubusercontent.com/112368898/194229616-e5166a61-3dfa-45f4-98ec-7896bf8c67a4.png)
+
+
 Experiment 2 : DDL Commands with Constraints – PRIMARY, FOREIGN KEY, UNIQUE, CHECK
 Output:
  1)![EX2 output1](https://user-images.githubusercontent.com/112368898/194352367-5b54d4fa-fefa-452e-b09f-71fa5dd3c3f4.png)
