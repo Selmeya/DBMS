@@ -1,6 +1,6 @@
 |Exp.No 		|Expermiment Link  	|Date 	|
 |:---:|:---|:---:|
-|1.		|[DDL Commands – CREATE, ALTER, DROP ](#exp1)	|03-10-2022		|
+|1.		|[DDL Commands – CREATE, ALTER, DROP ](#exp1)	|05-10-2022		|
 |2.		|[DDL Commands with Constraints – PRIMARY, FOREIGN KEY, UNIQUE, CHECK ](#exp2)<br/>	|		|
 |3 & 4.		|[DML Commands – INSERT, SELECT, UPDATE, DELETE ](#exp3)<br/>	|		|
 |5.		|[SELECT with various clause – WHERE, pattern matching ](#exp5)<br/>	|		|
@@ -8,7 +8,7 @@
 |7.		|[SELECT with various clause – GROUP BY, HAVING, ORDER BY ](#exp7)<br/>	|		|
 |8.		|[SubQuery & Correlated Query ](#exp8)<br/>	|   	    	|
 |9.		|[Joins – EquiJoin, InnerJoin, OuterJoin](#exp9)<br/>	|	 	|
-|10.		|[VIEW, INDEX, SEQUENCE ](#exp10)<br/>	| 04-10-2022	 	|
+|10.		|[VIEW, INDEX, SEQUENCE ](#exp10)<br/>	| |
 |11.		|[Simple programming  exercises using CASE, IF, ITERATE, LEAVE, LOOP ](#exp11)<br/>	|			|
 |12.		|[Simple programming  exercises using REPEAT, WHILE](#exp12)<br/>	|	     |
 |13.		|[TCL Commands – COMMIT, ROLLBACK, SAVEPOINT ](#exp13)<br/>	|  		|
