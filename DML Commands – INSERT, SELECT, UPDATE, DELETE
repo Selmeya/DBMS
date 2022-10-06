@@ -1,0 +1,292 @@
+mysql> alter table Stu add primary key(rollno);
+Query OK, 0 rows affected (0.17 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+mysql> alter table Stu modify column MOBILE_NO int not null;
+Query OK, 0 rows affected (0.10 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+mysql> desc stu;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| ROLLNO    | int         | NO   | PRI | NULL    |       |
+| NAME      | varchar(20) | YES  |     | NULL    |       |
+| DEPT      | varchar(4)  | YES  |     | NULL    |       |
+| GENDER    | varchar(1)  | YES  |     | NULL    |       |
+| DOB       | date        | YES  |     | NULL    |       |
+| CITY      | varchar(20) | YES  |     | NULL    |       |
+| MOBILE_NO | int         | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+7 rows in set (0.01 sec)
+
+mysql> use FACULTY;
+Database changed
+mysql> alter table Faculty add primary key(FACULTY_ID);
+Query OK, 0 rows affected (0.15 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table Faculty add check(GENDER = 'M' or GENDER = 'F');
+Query OK, 0 rows affected (0.19 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc fal;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| FACULTY_ID | varchar(4)  | NO   | PRI | NULL    |       |
+| FAC_NAME   | varchar(15) | YES  |     | NULL    |       |
+| GENDER     | char(1)     | YES  |     | NULL    |       |
+| DOB        | date        | YES  |     | NULL    |       |
+| DOJ        | date        | YES  |     | NULL    |       |
+| MOBILE_NO  | int         | YES  |     | NULL    |       |
+| DEPT       | varchar(4)  | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+7 rows in set (0.03 sec)
+
+mysql> use DEPARTMENT;
+Database changed
+mysql> alter table Dept add primary key(DEPT_NO);
+Query OK, 0 rows affected (0.13 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+mysql> use COURSE;
+Database changed
+mysql> alter table Cour add primary key(COURSE_NO);
+Query OK, 0 rows affected (0.08 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table Cour add check (SEM_NO >=1  and SEM_NO <=6);
+Query OK, 0 rows affected (0.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+mysql> USE STUDENT;
+Database changed
+mysql> desc Stu ;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| ROLLNO    | int(10)     | NO   | PRI | 0       |       |
+| NAME      | varchar(20) | YES  |     | NULL    |       |
+| DEPT      | varchar(4)  | YES  |     | NULL    |       |
+| GENDER    | varchar(1)  | YES  |     | NULL    |       |
+| DOB       | date        | YES  |     | NULL    |       |
+| CITY      | varchar(20) | YES  |     | NULL    |       |
+| MOBILE_NO | int(10)     | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+7 rows in set (0.02 sec)
+
+
+mysql> use STUDENT
+Database changed
+mysql> desc Stu;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| ROLLNO    | int(10)     | NO   | PRI | 0       |       |
+| NAME      | varchar(20) | YES  |     | NULL    |       |
+| DEPT      | varchar(4)  | YES  |     | NULL    |       |
+| GENDER    | varchar(1)  | YES  |     | NULL    |       |
+| DOB       | date        | YES  |     | NULL    |       |
+| CITY      | varchar(20) | YES  |     | NULL    |       |
+| MOBILE_NO | int(10)     | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+7 rows in set (0.02 sec)
+
+mysql> INSERT INTO STU VALUES(1137,'SELMEYA','IT','F',"2004-03-30",'RAMESWARAM',737358065);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> INSERT INTO STU VALUES(4189,'AARTHI','AIDS','F',"2003-10-21",'KARUR',770855065);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO STU VALUES(1234,'SEL','IT','F',"2004-03-30",'RAMESWARAM',737358565);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO STU VALUES(5678,'MEYA','IT','F',"2003-03-31",'RAMESWARAM',736558065);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT* FROM stu;
++--------+---------+------+--------+------------+------------+-----------+
+| ROLLNO | NAME    | DEPT | GENDER | DOB        | CITY       | MOBILE_NO |
++--------+---------+------+--------+------------+------------+-----------+
+|   1137 | SELMEYA | IT   | F      | 2004-03-30 | RAMESWARAM | 737358065 |
+|   1234 | SEL     | IT   | F      | 2004-03-30 | RAMESWARAM | 737358565 |
+|   4189 | AARTHI  | AIDS | F      | 2003-10-21 | KARUR      | 770855065 |
+|   5678 | MEYA    | IT   | F      | 2003-03-31 | RAMESWARAM | 736558065 |
++--------+---------+------+--------+------------+------------+-----------+
+4 rows in set (0.01 sec)
+
+mysql> USE FACULTY;
+Database changed
+mysql> ALTER TABLE Faculty add AGE int(3);
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc Faculty;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| FACULTY_ID | varchar(4)  | YES  |     | NULL    |       |
+| FAC_NAME   | varchar(15) | YES  |     | NULL    |       |
+| GENDER     | char(1)     | YES  |     | NULL    |       |
+| DOB        | date        | YES  |     | NULL    |       |
+| DOJ        | date        | YES  |     | NULL    |       |
+| MOBILE_NO  | int(10)     | YES  |     | NULL    |       |
+| Dept       | varchar(4)  | YES  |     | NULL    |       |
+| AGE        | int(3)      | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+8 rows in set (0.02 sec)
+
+mysql> INSERT INTO FACULTY VALUES(2001,'SARU','F',"2002-11-26","2020-05-01",701060,'CSE',30);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO FACULTY VALUES(1200,'EBI','M',"1992-11-17","2019-03-01",701092,'CSE',40);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT* FROM Faculty;
++------------+----------+--------+------------+------------+-----------+------+------+
+| FACULTY_ID | FAC_NAME | GENDER | DOB        | DOJ        | MOBILE_NO | Dept | AGE  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 2001       | SARU     | F      | 2002-11-26 | 2020-05-01 |    701060 | CSE  |   30 |
+| 1200       | EBI      | M      | 1992-11-17 | 2019-03-01 |    701092 | CSE  |   40 |
++------------+----------+--------+------------+------------+-----------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> USE DEPARTMENT;
+Database changed
+mysql> desc Dept ;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| DEPT_NO   | varchar(4)  | NO   | PRI |         |       |
+| DEPT_NAME | varchar(15) | YES  |     | NULL    |       |
+| DEPT_HEAD | varchar(4)  | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+
+mysql> INSERT INTO DEPT VALUES(01,'COMPUTER','SA');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO DEPT VALUES(02,'HUMANITIES','SL');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO DEPT VALUES(03,'MECH','IL');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT* FROM Dept;
++---------+------------+-----------+
+| DEPT_NO | DEPT_NAME  | DEPT_HEAD |
++---------+------------+-----------+
+| 1       | COMPUTER   | SA        |
+| 2       | HUMANITIES | SL        |
+| 3       | MECH       | IL        |
++---------+------------+-----------+
+3 rows in set (0.00 sec)
+
+mysql> use COURSE;
+Database changed
+mysql> desc Cour;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| COURSE_NO   | varchar(3)  | NO   | PRI |         |       |
+| COURSE_DESC | varchar(14) | YES  |     | NULL    |       |
+| COURSE_TYPE | char(1)     | YES  |     | NULL    |       |
+| SEM_NO      | char(1)     | YES  |     | NULL    |       |
+| HALL_NO     | varchar(4)  | YES  |     | NULL    |       |
+| FAC_NO      | varchar(4)  | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+6 rows in set (0.03 sec)
+
+mysql> INSERT INTO COUR VALUES('01','SCIENCE','M','4','1','2000');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO COUR VALUES('02','ETHICS','F','3','5','2002');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO COUR VALUES('03','MATHS','M','5','3','2004');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT* FROM Cour;
++-----------+-------------+-------------+--------+---------+--------+
+| COURSE_NO | COURSE_DESC | COURSE_TYPE | SEM_NO | HALL_NO | FAC_NO |
++-----------+-------------+-------------+--------+---------+--------+
+| 01        | SCIENCE     | M           | 4      | 1       | 2000   |
+| 02        | ETHICS      | F           | 3      | 5       | 2002   |
+| 03        | MATHS       | M           | 5      | 3       | 2004   |
++-----------+-------------+-------------+--------+---------+--------+
+3 rows in set (0.00 sec)
+
+#UPDATE
+
+mysql> USE STUDENT;
+Database changed
+mysql> SELECT* FROM Stu ;
++--------+---------+------+--------+------------+------------+-----------+
+| ROLLNO | NAME    | DEPT | GENDER | DOB        | CITY       | MOBILE_NO |
++--------+---------+------+--------+------------+------------+-----------+
+|   1137 | SELMEYA | IT   | F      | 2004-03-30 | RAMESWARAM | 737358065 |
+|   1234 | SEL     | IT   | F      | 2004-03-30 | RAMESWARAM | 737358565 |
+|   4189 | AARTHI  | AIDS | F      | 2003-10-21 | KARUR      | 770855065 |
+|   5678 | MEYA    | IT   | F      | 2003-03-31 | RAMESWARAM | 736558065 |
++--------+---------+------+--------+------------+------------+-----------+
+4 rows in set (0.00 sec)
+
+mysql> UPDATE STU SET ROLLNO = 1234    WHERE ROLLNO=12114 ;
+Query OK, 0 rows affected (0.02 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+mysql> SELECT*FROM STU;
++--------+---------+------+--------+------------+------------+-----------+
+| ROLLNO | NAME    | DEPT | GENDER | DOB        | CITY       | MOBILE_NO |
++--------+---------+------+--------+------------+------------+-----------+
+|   1137 | SELMEYA | IT   | F      | 2004-03-30 | RAMESWARAM | 737358065 |
+|   1234 | SEL     | IT   | F      | 2004-03-30 | RAMESWARAM | 737358565 |
+|   4189 | AARTHI  | AIDS | F      | 2003-10-21 | KARUR      | 770855065 |
+|   5678 | MEYA    | IT   | F      | 2003-03-31 | RAMESWARAM | 736558065 |
++--------+---------+------+--------+------------+------------+-----------+
+4 rows in set (0.00 sec)
+
+#DELETE RECORD
+
+
+mysql> USE FACULTY;
+Database changed
+mysql> DELETE FROM FACULTY WHERE DOJ = "2020-05-01";
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT* FROM FACULTY;
++------------+----------+--------+------------+------------+-----------+------+------+
+| FACULTY_ID | FAC_NAME | GENDER | DOB        | DOJ        | MOBILE_NO | Dept | AGE  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 1200       | EBI      | M      | 1992-11-17 | 2019-03-01 |    701092 | CSE  |   40 |
++------------+----------+--------+------------+------------+-----------+------+------+
+1 row in set (0.00 sec)
+
+#MODIFY
+
+
+mysql> USE FACULTY;
+Database changed
+mysql> UPDATE FACULTY    SET DOB = "1992-11-17"  WHERE FAC_NAME = 'EBI';
+Query OK, 0 rows affected (0.01 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> SELECT* FROM FACULTY;
++------------+----------+--------+------------+------------+-----------+------+------+
+| FACULTY_ID | FAC_NAME | GENDER | DOB        | DOJ        | MOBILE_NO | Dept | AGE  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 1200       | EBI      | M      | 1992-11-17 | 2019-03-01 |    701092 | CSE  |   40 |
++------------+----------+--------+------------+------------+-----------+------+------+
+1 row in set (0.00 sec)
+ 
+ #REMOVE
+
+mysql> DELETE FROM FACULTY WHERE AGE > 35;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT* FROM FACULTY;
+Empty set (0.01 sec)
+
