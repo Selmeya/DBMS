@@ -11,9 +11,9 @@ Output:
 
 
 Experiment 2 : DDL Commands with Constraints – PRIMARY, FOREIGN KEY, UNIQUE, CHECK(https://github.com/Selmeya/DBMS/blob/main/DDL%20Commands%20with%20Constraints%20%E2%80%93%20PRIMARY%2C%20FOREIGN%20KEY%2C%20UNIQUE%2C%20CHECK)
-
-
 Output:
+ 
+ 
  1)![EX2 output1](https://user-images.githubusercontent.com/112368898/194352367-5b54d4fa-fefa-452e-b09f-71fa5dd3c3f4.png)
  2)![EX2 output2](https://user-images.githubusercontent.com/112368898/194352463-08b68d10-0f1c-42cc-b2f5-5665d73e3e2b.png)
  3)![EX2 output3](https://user-images.githubusercontent.com/112368898/194352691-e94bf2bd-252b-4ecb-8b06-194e649e073b.png)
