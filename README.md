@@ -79,10 +79,31 @@ Output:
 
 8)![EX6 OUTPUT8](https://user-images.githubusercontent.com/112368898/194574010-76411012-50a6-4ab8-9098-8dce08b57c73.png)
 
-Experiment 7:SELECT with various clause – GROUP BY, HAVING, ORDER BY
+Experiment 7:SELECT with various clause – GROUP BY, HAVING, ORDER BY(https://github.com/Selmeya/DBMS/blob/main/SELECT%20with%20various%20clause%20%E2%80%93%20GROUP%20BY%2C%20HAVING%2C%20ORDER%20BY)
+
 Output:
-Experiment 8:SubQuery& Correlated Query
+
+1)![EX7 OUTPUT1](https://user-images.githubusercontent.com/112368898/194585564-56d7873e-1db5-4f30-87bb-3dab79b5c406.png)
+
+2)![EX7 OUTPUT2](https://user-images.githubusercontent.com/112368898/194585628-268a8651-0abc-400c-8626-b530f5f63733.png)
+
+3)![EX7 OUTPUT3](https://user-images.githubusercontent.com/112368898/194585700-f5981884-39cd-449f-986c-b5a453b8fccc.png)
+
+4)![EX7 OUTPUT4](https://user-images.githubusercontent.com/112368898/194585743-cb694864-1080-4b25-8317-8a3d51302ffc.png)
+
+Experiment 8:SubQuery& Correlated Query(https://github.com/Selmeya/DBMS/blob/main/SubQuery%26%20Correlated%20Query)
+
 Output:
+
+1)![EX8 OUTPUT1](https://user-images.githubusercontent.com/112368898/194586118-37ff848d-7835-4aae-a8f7-d3482ef3b650.png)
+
+2)![EX8 OUTPUT2](https://user-images.githubusercontent.com/112368898/194586190-f0419091-3547-449a-a9b5-1236c8303662.png)
+
+3)![EX8 OUTPUT3](https://user-images.githubusercontent.com/112368898/194586251-b8b1db24-40bc-4a20-83df-4754c64a39fe.png)
+
+4)![EX8 OUTPUT4](https://user-images.githubusercontent.com/112368898/194586326-cf7fd797-60ab-4ffa-98a3-d2c67fd6c886.png)
+
+
 Experiment 9:Joins – EquiJoin, InnerJoin, OuterJoin
 Output:
 Experiment 10:VIEW, INDEX, SEQUENCE
