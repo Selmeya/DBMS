@@ -1,0 +1,26 @@
+mysql> USE STUDENT;
+Database changed
+mysql> SELECT*FROM STU;
++--------+---------+------+--------+------------+------------+-----------+
+| ROLLNO | NAME    | DEPT | GENDER | DOB        | CITY       | MOBILE_NO |
++--------+---------+------+--------+------------+------------+-----------+
+|   1137 | SELMEYA | IT   | F      | 2004-03-30 | RAMESWARAM | 737358065 |
+|   1234 | SEL     | IT   | F      | 2004-03-30 | RAMESWARAM | 737358565 |
+|   4189 | AARTHI  | AIDS | F      | 2003-10-21 | KARUR      | 770855065 |
+|   5678 | MEYA    | IT   | F      | 2003-03-31 | RAMESWARAM | 736558065 |
++--------+---------+------+--------+------------+------------+-----------+
+4 rows in set (0.01 sec)
+
+mysql> CREATE VIEW STD_VIEW AS SELECT ROLLNO, NAME, DOB FROM STU;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> SELECT * FROM STD_VIEW;
++--------+---------+------------+
+| ROLLNO | NAME    | DOB        |
++--------+---------+------------+
+|   1137 | SELMEYA | 2004-03-30 |
+|   1234 | SEL     | 2004-03-30 |
+|   4189 | AARTHI  | 2003-10-21 |
+|   5678 | MEYA    | 2003-03-31 |
++--------+---------+------------+
+4 rows in set (0.01 sec)
