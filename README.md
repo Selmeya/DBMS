@@ -165,9 +165,14 @@ Output:
 2)![EX15 OUTPUT2](https://user-images.githubusercontent.com/112368898/194612529-8da2549f-910c-47f9-99da-a5bfb1625af6.png)
 
 
-Experiment 16:HIGH LEVEL PROGRAMMING EXTENSIONS(FUNCTIONS)
+Experiment 16:HIGH LEVEL PROGRAMMING EXTENSIONS(FUNCTIONS)(https://github.com/Selmeya/DBMS/blob/main/HIGH%20LEVEL%20PROGRAMMING%20EXTENSIONS%20(FUNCTIONS))
 
 Output:
+
+1)![EX16 OUTPUT1](https://user-images.githubusercontent.com/112368898/194613902-05068fb3-7886-48fd-9691-07159886083b.png)
+
+2)![EX16 OUTPUT2](https://user-images.githubusercontent.com/112368898/194614084-dec279d6-d3d0-462a-971b-080570a76375.png)
+
 
 Experiment 17:HIGH LEVEL LANGUAGE EXTENSION WITH CURSORS
 
