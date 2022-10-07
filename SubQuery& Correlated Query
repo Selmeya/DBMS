@@ -1,0 +1,101 @@
+1)
+
+mysql> SELECT* FROM ASSESMENT;
++-------------+-----------+-----------+-------+------------+------------+
+| REGISTER_NO | NAME      | COURSE_NO | MARKS | FACULTY_ID | ASSESMENTS |
++-------------+-----------+-----------+-------+------------+------------+
+|   192011274 | SEL       | C001      |    90 |       2001 |          1 |
+|   192011274 | SEL       | C001      |    90 |       2002 |          2 |
+|   192011274 | SEL       | C002      |    70 |       2002 |          1 |
+|   192011273 | SELMI     | C001      |    70 |       2001 |          1 |
+|   192011273 | SELMI     | C002      |    79 |       2001 |          1 |
+|   192011272 | AARTHI    | C002      |    80 |       2002 |          2 |
+|   192011090 | INDHU     | C002      |    65 |       2002 |          1 |
+|   192011090 | INDHU     | C001      |    98 |       2001 |          2 |
+|   192011095 | SANJAY    | C001      |    92 |       2001 |          1 |
+|   191711670 | DHARSHINI | C002      |    39 |       2003 |          2 |
++-------------+-----------+-----------+-------+------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT REGISTER_NO,NAME,MARKS FROM ASSESMENT WHERE MARKS =(SELECT MAX(HIGH_SCORE) FROM (SELECT REGISTER_NO,NAME, MAX(MARKS) AS HIGH_SCORE FROM ASSESMENT ORDER BY HIGH_SCORE)AS HIGH_SCORER);
++-------------+-------+-------+
+| REGISTER_NO | NAME  | MARKS |
++-------------+-------+-------+
+|   192011090 | INDHU |    98 |
++-------------+-------+-------+
+1 row in set (0.02 sec)
+
+2)
+
+mysql> SELECT REGISTER_NO, NAME , MAX(MARKS) FROM ASSESMENT GROUP BY REGISTER_NO;
++-------------+-----------+------------+
+| REGISTER_NO | NAME      | MAX(MARKS) |
++-------------+-----------+------------+
+|   191711670 | DHARSHINI |         39 |
+|   192011090 | INDHU     |         98 |
+|   192011095 | SANJAY    |         92 |
+|   192011272 | AARTHI    |         80 |
+|   192011273 | SELMI     |         79 |
+|   192011274 | SEL       |         90 |
++-------------+-----------+------------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT REGISTER_NO, NAME, MAX(MYCOUNT) FROM(SELECT REGISTER_NO, NAME, COUNT(ASSESMENTS) AS MYCOUNT FROM ASSESMENT GROUP BY REGISTER_NO ) AS MAX_COUNT;
++-------------+-----------+--------------+
+| REGISTER_NO | NAME      | MAX(MYCOUNT) |
++-------------+-----------+--------------+
+|   191711670 | DHARSHINI |            3 |
++-------------+-----------+--------------+
+1 row in set (0.00 sec)
+
+3)
+
+mysql> USE FACULTY;
+Database changed
+mysql> SELECT*FROM Faculty;
++------------+----------+--------+------------+------------+-----------+------+------+
+| FACULTY_ID | FAC_NAME | GENDER | DOB        | DOJ        | MOBILE_NO | Dept | AGE  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 2001       | SARU     | F      | 2002-11-26 | 2020-05-01 |    701060 | CSE  |   30 |
+| 2001       | KANNAN   | M      | 2000-01-15 | 2012-01-13 |   7451845 | IT   |   24 |
+| 2002       | RAJ      | F      | 2002-02-15 | 2022-02-14 |    754748 | ECE  |   57 |
+| 204        | ROY      | M      | 2019-09-19 | 2014-11-01 |    784748 | CSE  |   66 |
++------------+----------+--------+------------+------------+-----------+------+------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT * FROM FACULTY WHERE DOJ = (SELECT MAX(DOJ) FROM FACULTY);
++------------+----------+--------+------------+------------+-----------+------+------+
+| FACULTY_ID | FAC_NAME | GENDER | DOB        | DOJ        | MOBILE_NO | Dept | AGE  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 2002       | RAJ      | F      | 2002-02-15 | 2022-02-14 |    754748 | ECE  |   57 |
++------------+----------+--------+------------+------------+-----------+------+------+
+1 row in set (0.01 sec)
+
+4)
+
+mysql> USE STUDENT;
+Database changed
+mysql> SELECT*FROM ASSESMENT ;
++-------------+-----------+-----------+-------+------------+------------+
+| REGISTER_NO | NAME      | COURSE_NO | MARKS | FACULTY_ID | ASSESMENTS |
++-------------+-----------+-----------+-------+------------+------------+
+|   192011274 | SEL       | C001      |    90 |       2001 |          1 |
+|   192011274 | SEL       | C001      |    90 |       2002 |          2 |
+|   192011274 | SEL       | C002      |    70 |       2002 |          1 |
+|   192011273 | SELMI     | C001      |    70 |       2001 |          1 |
+|   192011273 | SELMI     | C002      |    79 |       2001 |          1 |
+|   192011272 | AARTHI    | C002      |    80 |       2002 |          2 |
+|   192011090 | INDHU     | C002      |    65 |       2002 |          1 |
+|   192011090 | INDHU     | C001      |    98 |       2001 |          2 |
+|   192011095 | SANJAY    | C001      |    92 |       2001 |          1 |
+|   191711670 | DHARSHINI | C002      |    39 |       2003 |          2 |
++-------------+-----------+-----------+-------+------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT COURSE_NO, MARKS , AVG(MARKS) FROM ASSESMENT WHERE MARKS > (SELECT AVG(MARKS) FROM ASSESMENT) ;
++-----------+-------+------------+
+| COURSE_NO | MARKS | AVG(MARKS) |
++-----------+-------+------------+
+| C001      |    90 |    88.1667 |
++-----------+-------+------------+
+1 row in set (0.01 sec)
