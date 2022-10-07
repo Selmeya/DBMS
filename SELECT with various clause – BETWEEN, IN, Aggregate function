@@ -1,0 +1,170 @@
+mysql> USE COURSE;
+Database changed
+mysql> SELECT* FROM Course;
++-----------+-------------+--------+---------+------------+-------------+
+| COURSE_NO | COURSE_DESC | SEM_NO | HALL_N0 | FACULTY_NO | COURSE_TYPE |
++-----------+-------------+--------+---------+------------+-------------+
+|         1 | COMPUTER    |      1 | 004     | 2001       | Program     |
+|         2 | AI          |      3 | NULL    | 2002       | Program     |
+|         3 | ENGLISH     |      1 | NULL    | 2005       | Statis      |
+|         4 | ETHICS      |      2 | NULL    | 2004       | Statis      |
+|         5 | DATA_STRUC  |      6 | 044     | 2003       | Program     |
++-----------+-------------+--------+---------+------------+-------------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT* FROM COURSE WHERE COURSE_TYPE IN('Program');
++-----------+-------------+--------+---------+------------+-------------+
+| COURSE_NO | COURSE_DESC | SEM_NO | HALL_N0 | FACULTY_NO | COURSE_TYPE |
++-----------+-------------+--------+---------+------------+-------------+
+|         1 | COMPUTER    |      1 | 004     | 2001       | Program     |
+|         2 | AI          |      3 | NULL    | 2002       | Program     |
+|         5 | DATA_STRUC  |      6 | 044     | 2003       | Program     |
++-----------+-------------+--------+---------+------------+-------------+
+3 rows in set (0.01 sec)
+
+mysql> SELECT* FROM COURSE WHERE COURSE_TYPE IN('Statis');
++-----------+-------------+--------+---------+------------+-------------+
+| COURSE_NO | COURSE_DESC | SEM_NO | HALL_N0 | FACULTY_NO | COURSE_TYPE |
++-----------+-------------+--------+---------+------------+-------------+
+|         3 | ENGLISH     |      1 | NULL    | 2005       | Statis      |
+|         4 | ETHICS      |      2 | NULL    | 2004       | Statis      |
++-----------+-------------+--------+---------+------------+-------------+
+2 rows in set (0.00 sec)
+
+
+
+mysql> use STUDENT;
+Database changed
+mysql> SELECT*FROM MARK;
++-----------+-------------+-------+
+| COURSE_NO | REGISTER_NO | MARKS |
++-----------+-------------+-------+
+| C001      |   192121137 |    80 |
+| C001      |   192121138 |    25 |
+| C001      |   192121139 |    35 |
+| C002      |   192121136 |    75 |
+| C003      |   192121135 |    67 |
++-----------+-------------+-------+
+5 rows in set (0.00 sec)
+mysql> SELECT COURSE_NO FROM Mark WHERE MARKS BETWEEN 50 AND 80;
++-----------+
+| COURSE_NO |
++-----------+
+| C001      |
+| C002      |
+| C003      |
++-----------+
+3 rows in set (0.01 sec)
+
+1)
+mysql> SELECT*FROM MARK;
++-----------+-------------+-------+--------+
+| COURSE_NO | REGISTER_NO | MARKS | SEM_NO |
++-----------+-------------+-------+--------+
+| C001      |   192121137 |    80 |      4 |
+| C001      |   192121138 |    25 |      1 |
+| C001      |   192121139 |    35 |      2 |
+| C002      |   192121136 |    75 |      3 |
+| C003      |   192121135 |    67 |      5 |
+| C002      |   192121134 |    57 |      3 |
+| C002      |   192121133 |    89 |      9 |
+| C002      |   192121132 |    78 |      7 |
+| C021      |   192121131 |    68 |      1 |
+| C021      |   192121139 |    79 |      5 |
+| C021      |   192121130 |    46 |      5 |
++-----------+-------------+-------+--------+
+11 rows in set (0.00 sec)
+
+mysql> SELECT COURSE_NO,AVG(MARKS) FROM Mark WHERE COURSE_NO = 'C002';
++-----------+------------+
+| COURSE_NO | AVG(MARKS) |
++-----------+------------+
+| C002      |    74.7500 |
++-----------+------------+
+1 row in set (0.01 sec)
+
+2)
+mysql> SELECT COURSE_NO,MIN(MARKS),MAX(MARKS) FROM Mark WHERE COURSE_NO='C021';
++-----------+------------+------------+
+| COURSE_NO | MIN(MARKS) | MAX(MARKS) |
++-----------+------------+------------+
+| C021      |         46 |         79 |
++-----------+------------+------------+
+1 row in set (0.01 sec)
+
+3)
+mysql> SELECT COURSE_NO,MIN(MARKS),MAX(MARKS),AVG(MARKS) FROM Mark WHERE SEM_NO ='5';
++-----------+------------+------------+------------+
+| COURSE_NO | MIN(MARKS) | MAX(MARKS) | AVG(MARKS) |
++-----------+------------+------------+------------+
+| C003      |         46 |         79 |    64.0000 |
++-----------+------------+------------+------------+
+1 row in set (0.01 sec)
+
+4)
+mysql> SELECT COURSE_NO,AVG(MARKS) FROM Mark WHERE COURSE_NO = 'C001';
++-----------+------------+
+| COURSE_NO | AVG(MARKS) |
++-----------+------------+
+| C001      |    46.6667 |
++-----------+------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COURSE_NO,AVG(MARKS) FROM Mark WHERE COURSE_NO = 'C002';
++-----------+------------+
+| COURSE_NO | AVG(MARKS) |
++-----------+------------+
+| C002      |    74.7500 |
++-----------+------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COURSE_NO,AVG(MARKS) FROM Mark WHERE COURSE_NO = 'C003';
++-----------+------------+
+| COURSE_NO | AVG(MARKS) |
++-----------+------------+
+| C003      |    67.0000 |
++-----------+------------+
+1 row in set (0.00 sec)
+
+5)
+mysql> SELECT SUM(MARKS) FROM Mark;
++------------+
+| SUM(MARKS) |
++------------+
+|        699 |
++------------+
+1 row in set (0.00 sec)
+
+6)
+mysql> SELECT COURSE_NO,COUNT(COURSE_NO) FROM MARK WHERE COURSE_NO ='C001';
++-----------+------------------+
+| COURSE_NO | COUNT(COURSE_NO) |
++-----------+------------------+
+| C001      |                3 |
++-----------+------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COURSE_NO,COUNT(COURSE_NO) FROM MARK WHERE COURSE_NO ='C002';
++-----------+------------------+
+| COURSE_NO | COUNT(COURSE_NO) |
++-----------+------------------+
+| C002      |                4 |
++-----------+------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COURSE_NO,COUNT(COURSE_NO) FROM MARK WHERE COURSE_NO ='C003';
++-----------+------------------+
+| COURSE_NO | COUNT(COURSE_NO) |
++-----------+------------------+
+| C003      |                1 |
++-----------+------------------+
+1 row in set (0.00 sec)
+
+7)
+mysql> SELECT COUNT(COURSE_NO) FROM MARK;
++------------------+
+| COUNT(COURSE_NO) |
++------------------+
+|               11 |
++------------------+
+1 row in set (0.00 sec)
