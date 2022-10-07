@@ -39,7 +39,26 @@ Output:
 Experiment 5:SELECT with various clause – WHERE, pattern matching(https://github.com/Selmeya/DBMS/blob/main/SELECT%20with%20various%20clause%20%E2%80%93%20WHERE%2C%20pattern%20matching)
 Output:
 
-1)
+1)![EX5 OUTPUT1](https://user-images.githubusercontent.com/112368898/194572562-bbcd515a-cc4d-4118-afb1-5dade85f86f8.png)
+
+2)![EX5 OUTPUT2](https://user-images.githubusercontent.com/112368898/194572634-e923fff4-fe5d-424e-883d-cedf2d7b8a43.png)
+
+3)![EX5 OUTPUT3](https://user-images.githubusercontent.com/112368898/194572678-488aa1bd-3f55-47f1-ae8e-71bded7a4893.png)
+
+4)![EX5 OUTPUT4](https://user-images.githubusercontent.com/112368898/194572723-8b9c7bdb-483d-464b-9878-8949a7470931.png)
+
+5)![EX5 OUTPUT5](https://user-images.githubusercontent.com/112368898/194572776-7b2f1f83-09f6-487d-a182-8e8aa7cd86df.png)
+
+6)![EX5 OUTPUT6](https://user-images.githubusercontent.com/112368898/194572829-f7cdcd10-8b17-41e8-ae1e-fefa0ddcc54d.png)
+
+7)![EX5 OUTPUT7](https://user-images.githubusercontent.com/112368898/194572895-53ff1f62-0f95-40d2-8767-f3d8ae87aa97.png)
+
+8)![EX5 OUTPUT8](https://user-images.githubusercontent.com/112368898/194572948-355b2dc1-b251-4bb7-8c4a-1bc048472151.png)
+
+9)![EX5 OUTPUT9](https://user-images.githubusercontent.com/112368898/194573009-a0e11850-abf0-413c-a72e-48af581ffc83.png)
+
+10)![EX5 OUTPUT10](https://user-images.githubusercontent.com/112368898/194573079-9978ffea-1199-44e4-8c2f-689d0de82773.png)
+
 Experiment 6:SELECT with various clause – BETWEEN, IN, Aggregate function
 Output:
 Experiment 7:SELECT with various clause – GROUP BY, HAVING, ORDER BY
