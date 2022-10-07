@@ -156,9 +156,14 @@ Output:
 
 1)![EX14 OUTPUT](https://user-images.githubusercontent.com/112368898/194611169-d963bbca-0689-4d4f-993f-73447a113460.png)
 
-Experiment 15:HIGH LEVEL PROGRAMMING EXTENSIONS (PROCEDURES)
+Experiment 15:HIGH LEVEL PROGRAMMING EXTENSIONS (PROCEDURES)(https://github.com/Selmeya/DBMS/blob/main/HIGH%20LEVEL%20PROGRAMMING%20EXTENSIONS%20(PROCEDURES))
 
 Output:
+
+1)![EX15 OUTPUT1](https://user-images.githubusercontent.com/112368898/194612484-c2ed6b96-da52-42bb-b7de-33c8013d2d84.png)
+
+2)![EX15 OUTPUT2](https://user-images.githubusercontent.com/112368898/194612529-8da2549f-910c-47f9-99da-a5bfb1625af6.png)
+
 
 Experiment 16:HIGH LEVEL PROGRAMMING EXTENSIONS(FUNCTIONS)
 
