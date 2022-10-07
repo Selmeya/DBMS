@@ -150,9 +150,11 @@ Output:
 3)![EX13 OUTPUT3](https://user-images.githubusercontent.com/112368898/194603423-fa7bc870-1f8d-4ad9-bdf1-27d4bb87ff2b.png)
 
 
-Experiment 14:DCL COMMANDS
+Experiment 14:DCL COMMANDS(https://github.com/Selmeya/DBMS/blob/main/DCL%20COMMANADS)
 
 Output:
+
+1)![EX14 OUTPUT](https://user-images.githubusercontent.com/112368898/194611169-d963bbca-0689-4d4f-993f-73447a113460.png)
 
 Experiment 15:HIGH LEVEL PROGRAMMING EXTENSIONS (PROCEDURES)
 
