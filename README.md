@@ -59,8 +59,26 @@ Output:
 
 10)![EX5 OUTPUT10](https://user-images.githubusercontent.com/112368898/194573079-9978ffea-1199-44e4-8c2f-689d0de82773.png)
 
-Experiment 6:SELECT with various clause – BETWEEN, IN, Aggregate function
+Experiment 6:SELECT with various clause – BETWEEN, IN, Aggregate function(https://github.com/Selmeya/DBMS/blob/main/SELECT%20with%20various%20clause%20%E2%80%93%20BETWEEN%2C%20IN%2C%20Aggregate%20function)
+
 Output:
+
+1)![EX6 OUTPUT1](https://user-images.githubusercontent.com/112368898/194573629-32dccf94-3dd6-4893-a012-c0e4797363b9.png)
+
+2)![EX6 OUTPUT2](https://user-images.githubusercontent.com/112368898/194573677-538cea87-5b6d-4554-abe4-e4041a17dfe1.png)
+
+3)![EX6 OUTPUT3](https://user-images.githubusercontent.com/112368898/194573717-e92c0155-3bd1-46e7-b68f-11d5bc5c2dd7.png)
+
+4)![EX6 OUTPUT4](https://user-images.githubusercontent.com/112368898/194573775-059a4bc2-6621-4a04-83b6-f3da8bec73e2.png)
+
+5)![EX6 OUTPUT5](https://user-images.githubusercontent.com/112368898/194573842-d61bec1a-a105-4489-a72e-ca4de88e98d5.png)
+
+6)![EX6 OUTPUT6](https://user-images.githubusercontent.com/112368898/194573897-c9145125-8666-4a4b-a965-e9e5933876f1.png)
+
+7)![EX6 OUTPUT7](https://user-images.githubusercontent.com/112368898/194573947-c0a7e09a-67e2-43b1-b788-f67c49ae2417.png)
+
+8)![EX6 OUTPUT8](https://user-images.githubusercontent.com/112368898/194574010-76411012-50a6-4ab8-9098-8dce08b57c73.png)
+
 Experiment 7:SELECT with various clause – GROUP BY, HAVING, ORDER BY
 Output:
 Experiment 8:SubQuery& Correlated Query
