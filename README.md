@@ -181,7 +181,7 @@ Output:
 1)![EX17 OUTPUT](https://user-images.githubusercontent.com/112368898/194617387-46bc6f59-fe26-40fa-9ddd-9e4b045f700f.png)
 
 
-Experiment 18:TRIGGER
+Experiment 18:TRIGGER(https://github.com/Selmeya/DBMS/blob/main/TRIGGER)
 
 Output:
 
