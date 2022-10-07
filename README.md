@@ -174,13 +174,19 @@ Output:
 2)![EX16 OUTPUT2](https://user-images.githubusercontent.com/112368898/194614084-dec279d6-d3d0-462a-971b-080570a76375.png)
 
 
-Experiment 17:HIGH LEVEL LANGUAGE EXTENSION WITH CURSORS
+Experiment 17:HIGH LEVEL LANGUAGE EXTENSION WITH CURSORS(https://github.com/Selmeya/DBMS/blob/main/HIGH%20LEVEL%20LANGUAGE%20EXTENSION%20WITH%20CURSORS)
 
 Output:
+
+1)![EX17 OUTPUT](https://user-images.githubusercontent.com/112368898/194617387-46bc6f59-fe26-40fa-9ddd-9e4b045f700f.png)
+
 
 Experiment 18:TRIGGER
 
 Output:
+
+1)![EX18 OUTPUT](https://user-images.githubusercontent.com/112368898/194617473-500b9099-ed6b-4049-b109-452dd0d25373.png)
+
 
 Experiment 19:
 
