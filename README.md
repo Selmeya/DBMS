@@ -36,8 +36,10 @@ Output:
 
 7)![EX34 OUTPUT 7](https://user-images.githubusercontent.com/112368898/194372765-e8df916d-1dcb-4448-b53b-566912ca736d.png)
 
-Experiment 5:SELECT with various clause – WHERE, pattern matching
+Experiment 5:SELECT with various clause – WHERE, pattern matching(https://github.com/Selmeya/DBMS/blob/main/SELECT%20with%20various%20clause%20%E2%80%93%20WHERE%2C%20pattern%20matching)
 Output:
+
+1)
 Experiment 6:SELECT with various clause – BETWEEN, IN, Aggregate function
 Output:
 Experiment 7:SELECT with various clause – GROUP BY, HAVING, ORDER BY
