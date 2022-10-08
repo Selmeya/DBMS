@@ -188,9 +188,15 @@ Output:
 1)![EX18 OUTPUT](https://user-images.githubusercontent.com/112368898/194617473-500b9099-ed6b-4049-b109-452dd0d25373.png)
 
 
-Experiment 19:
+Experiment 19:PHP (https://github.com/Selmeya/DBMS/blob/main/PHP)
+
 
 Output:
+
+1)![EX19 OUTPUT1](https://user-images.githubusercontent.com/112368898/194684779-f040d85b-9d66-4a89-afac-1a942e3ddd9e.png)
+
+2)![EX19 OUTPUT2](https://user-images.githubusercontent.com/112368898/194684783-5370c5d2-248a-442f-8c46-23017b43320a.png)
+
 
 Experiment 20:
 
