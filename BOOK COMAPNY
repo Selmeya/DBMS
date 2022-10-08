@@ -1,0 +1,99 @@
+mysql> CREATE DATABASE BOOKS;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> USE BOOKS;
+Database changed
+mysql> CREATE TABLE Book_Company(BOOK_NO INT(5),BOOK_NAME VARCHAR(30),AUTHOR_NAME VARCHAR(3),COST INT(4),EDITION INT(2));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> INSERT INTO Book_Company VALUES(101,"PILGRIMAGE","PC",650,3);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO Book_Company VALUES(102,"BRIDA","CP",1400,5);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO Book_Company VALUES(103,"MONK","JS",1200,4);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT*FROM Book_Company;
++---------+------------+-------------+------+---------+
+| BOOK_NO | BOOK_NAME  | AUTHOR_NAME | COST | EDITION |
++---------+------------+-------------+------+---------+
+|     100 | ALCHEMIST  | SL          |  500 |       1 |
+|     101 | PILGRIMAGE | PC          |  650 |       3 |
+|     102 | BRIDA      | CP          | 1400 |       5 |
+|     103 | MONK       | JS          | 1200 |       4 |
++---------+------------+-------------+------+---------+
+4 rows in set (0.01 sec)
+
+mysql> UPDATE Book_Company SET AUTHOR_NAME="COE" WHERE BOOK_NO=100;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> create table Authors(Author_id int(4),Author_name varchar(30),Research_area varchar(30));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into Authors values(200,"Newton","Physics");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Authors values(201,"Gauss","Maths");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Authors values(202,"VantHoff","Thermodynamics");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Authors values(203,"De-broglie","Optics");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select*from Authors;
++-----------+-------------+----------------+
+| Author_id | Author_name | Research_area  |
++-----------+-------------+----------------+
+|       200 | Newton      | Physics        |
+|       201 | Gauss       | Maths          |
+|       202 | VantHoff    | Thermodynamics |
+|       203 | De-broglie  | Optics         |
++-----------+-------------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> select Author_name from book_company where Book_name="Python";
+Empty set (0.01 sec)
+
+mysql> select EDITION from Book_Company where BOOK_NAME="MONK";
++---------+
+| EDITION |
++---------+
+|       4 |
++---------+
+1 row in set (0.00 sec)
+
+mysql> alter table Book_Company add PUBLISHED_YEAR int(4);
+Query OK, 4 rows affected (0.05 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> update Book_Company set PUBLISHED_YEAR=1995 where BOOK_NO=101;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update Book_Company set PUBLISHED_YEAR=1992 where BOOK_NO=102;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update Book_Company set PUBLISHED_YEAR=1990 where BOOK_NO=103;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update Book_Company set PUBLISHED_YEAR=1998 where BOOK_NO=100;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select*from Book_Company;
++---------+------------+-------------+------+---------+----------------+
+| BOOK_NO | BOOK_NAME  | AUTHOR_NAME | COST | EDITION | PUBLISHED_YEAR |
++---------+------------+-------------+------+---------+----------------+
+|     100 | ALCHEMIST  | COE         |  500 |       1 |           1998 |
+|     101 | PILGRIMAGE | PC          |  650 |       3 |           1995 |
+|     102 | BRIDA      | CP          | 1400 |       5 |           1992 |
+|     103 | MONK       | JS          | 1200 |       4 |           1990 |
++---------+------------+-------------+------+---------+----------------+
+4 rows in set (0.01 sec)
