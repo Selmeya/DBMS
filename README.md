@@ -198,7 +198,7 @@ Output:
 2)![EX19 OUTPUT2](https://user-images.githubusercontent.com/112368898/194684783-5370c5d2-248a-442f-8c46-23017b43320a.png)
 
 
-Experiment 20:
+Experiment 20:JDBC CONNECTIVITY (https://github.com/Selmeya/DBMS/blob/main/JDBC%20CONNECTIVITY)
 
 Output:
 
@@ -206,9 +206,19 @@ Experiment 21:DATABASECONNECTIVITYUSING JAVA AND MSACESS
 
 Output:
 
+1)![EX20 OUTPUT1](https://user-images.githubusercontent.com/112368898/194685055-b2fbf99a-1b2e-4b8c-aa21-b1dff7f040c5.png)
+
+2)![EX20 OUTPUT2](https://user-images.githubusercontent.com/112368898/194685066-620605a0-354f-47e6-a5b5-f83c1d003e87.png)
+
+
 Experiment 22:
 
 Output:
+
+1)![EX21 OUTPUT1](https://user-images.githubusercontent.com/112368898/194685090-a3e67ffb-f6f5-437e-94af-e627cfb65af7.png)
+
+2)![EX21 OUTPUT2](https://user-images.githubusercontent.com/112368898/194685103-c241d63d-2975-49f2-96a9-0e0025b37143.png)
+
 
 Experiment 23:
 
