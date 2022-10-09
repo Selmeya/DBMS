@@ -254,7 +254,15 @@ Output:
 5)![Screenshot (98)](https://user-images.githubusercontent.com/112368898/194762599-34ad4978-b169-4bc1-bcde-d8f4ac63e744.png)
 
 
-Experiment 25:
+Experiment 25:SUBJECT (https://github.com/Selmeya/DBMS/blob/main/SUBJECT)
 
 Output:
+
+1)![EX25 OUTPUT1](https://user-images.githubusercontent.com/112368898/194763888-8663bac2-8489-452f-b2b6-0bbed5b52bd8.png)
+
+
+2)![EX25 OUTPUT2](https://user-images.githubusercontent.com/112368898/194763901-c4d6007c-aaeb-41a6-a19d-3d4da0ca086f.png)
+
+3)![EX25 OUTPUT3](https://user-images.githubusercontent.com/112368898/194763910-b24106b4-ccc3-4365-8f84-3f167bd9c7c0.png)
+
 
