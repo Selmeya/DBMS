@@ -222,16 +222,37 @@ Output:
 1)![EX22 OUTPUT](https://user-images.githubusercontent.com/112368898/194686647-d0ac8093-11ad-49c2-823d-0dfc73bfc75d.png)
 
 
-Experiment 22:
+Experiment 23: HOSPITAL(https://github.com/Selmeya/DBMS/blob/main/HOSPITAL)
 
 Output:
 
+1)![Screenshot (94)](https://user-images.githubusercontent.com/112368898/194762547-035c0b7f-d85f-4aae-9e80-a62512008b46.png)
+
+2)![Screenshot (95)](https://user-images.githubusercontent.com/112368898/194762554-8bd6d992-ccb0-44cc-9812-61daece097f7.png)
+
+3)![Screenshot (96)](https://user-images.githubusercontent.com/112368898/194762570-305eb9fc-df72-4a6c-b040-70e9620ea9ae.png)
+
+4)![Screenshot (97)](https://user-images.githubusercontent.com/112368898/194762588-8deb4811-6d2b-4450-94d7-78644da9d253.png)
+
+5)![Screenshot (98)](https://user-images.githubusercontent.com/112368898/194762599-34ad4978-b169-4bc1-bcde-d8f4ac63e744.png)
 
 
 
-Experiment 24:
+
+Experiment 24:HOSPITAL(1)(https://github.com/Selmeya/DBMS/blob/main/HOSPITAL(1))
 
 Output:
+
+1)![Screenshot (94)](https://user-images.githubusercontent.com/112368898/194762547-035c0b7f-d85f-4aae-9e80-a62512008b46.png)
+
+2)![Screenshot (95)](https://user-images.githubusercontent.com/112368898/194762554-8bd6d992-ccb0-44cc-9812-61daece097f7.png)
+
+3)![Screenshot (96)](https://user-images.githubusercontent.com/112368898/194762570-305eb9fc-df72-4a6c-b040-70e9620ea9ae.png)
+
+4)![Screenshot (97)](https://user-images.githubusercontent.com/112368898/194762588-8deb4811-6d2b-4450-94d7-78644da9d253.png)
+
+5)![Screenshot (98)](https://user-images.githubusercontent.com/112368898/194762599-34ad4978-b169-4bc1-bcde-d8f4ac63e744.png)
+
 
 Experiment 25:
 
